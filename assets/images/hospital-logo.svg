@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B6EBD" />
+      <stop offset="100%" stop-color="#18B6C9" />
+    </linearGradient>
+    <linearGradient id="crossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#EAF6FC" />
+    </linearGradient>
+    <filter id="logoShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0B6EBD" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- Shield / Crest Background -->
+  <path d="M40 6 L68 18 C68 45 40 72 40 72 C40 72 12 45 12 18 Z" fill="url(#logoGrad)" filter="url(#logoShadow)"/>
+  <!-- Inner Rim -->
+  <path d="M40 10 L64 20 C64 43 40 67 40 67 C40 67 16 43 16 20 Z" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+  <!-- Medical Cross -->
+  <path d="M35 24 H45 V34 H55 V44 H45 V54 H35 V44 H25 V34 H35 Z" fill="url(#crossGrad)" rx="2"/>
+  <!-- Fracture / Orthopedic Care Arch Motif -->
+  <path d="M28 50 Q40 40 52 50" fill="none" stroke="#18B6C9" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Center Star/Healing Sparkle -->
+  <circle cx="40" cy="39" r="2.5" fill="#0B6EBD"/>
+</svg>

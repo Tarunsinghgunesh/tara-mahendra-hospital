@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 440" width="100%" height="100%">
+  <defs>
+    <linearGradient id="abGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#073B63"/>
+      <stop offset="100%" stop-color="#0B6EBD"/>
+    </linearGradient>
+    <linearGradient id="glassTile" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#EAF6FC" stop-opacity="0.85"/>
+    </linearGradient>
+    <filter id="abShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#073B63" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base Plate -->
+  <rect x="20" y="20" width="520" height="400" rx="28" fill="#F0F9FF" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <!-- Grid Accents -->
+  <line x1="20" y1="120" x2="540" y2="120" stroke="#0B6EBD" stroke-opacity="0.08"/>
+  <line x1="20" y1="220" x2="540" y2="220" stroke="#0B6EBD" stroke-opacity="0.08"/>
+  <line x1="20" y1="320" x2="540" y2="320" stroke="#0B6EBD" stroke-opacity="0.08"/>
+  <line x1="180" y1="20" x2="180" y2="420" stroke="#0B6EBD" stroke-opacity="0.08"/>
+  <line x1="360" y1="20" x2="360" y2="420" stroke="#0B6EBD" stroke-opacity="0.08"/>
+
+  <!-- Hospital Exterior Architectural Silhouette Representation -->
+  <g transform="translate(60, 90)">
+    <!-- Main Hospital Wing -->
+    <rect x="40" y="50" width="220" height="210" rx="16" fill="url(#abGrad)" filter="url(#abShadow)"/>
+    
+    <!-- Clinic Windows Array -->
+    <g fill="#EAF6FC" opacity="0.8">
+      <rect x="60" y="75" width="24" height="24" rx="4"/>
+      <rect x="100" y="75" width="24" height="24" rx="4"/>
+      <rect x="140" y="75" width="24" height="24" rx="4"/>
+      <rect x="180" y="75" width="24" height="24" rx="4"/>
+      <rect x="220" y="75" width="24" height="24" rx="4"/>
+
+      <rect x="60" y="115" width="24" height="24" rx="4"/>
+      <rect x="100" y="115" width="24" height="24" rx="4"/>
+      <rect x="140" y="115" width="24" height="24" rx="4"/>
+      <rect x="180" y="115" width="24" height="24" rx="4"/>
+      <rect x="220" y="115" width="24" height="24" rx="4"/>
+
+      <rect x="60" y="155" width="24" height="24" rx="4"/>
+      <rect x="100" y="155" width="24" height="24" rx="4"/>
+      <rect x="140" y="155" width="24" height="24" rx="4"/>
+      <rect x="180" y="155" width="24" height="24" rx="4"/>
+      <rect x="220" y="155" width="24" height="24" rx="4"/>
+    </g>
+
+    <!-- Entrance Portico -->
+    <rect x="120" y="210" width="60" height="50" rx="4" fill="#FFFFFF"/>
+    <path d="M120 210 L150 195 L180 210 Z" fill="#18B6C9"/>
+    <rect x="138" y="224" width="24" height="36" rx="2" fill="#073B63"/>
+
+    <!-- Emergency Cross Header -->
+    <circle cx="150" cy="30" r="18" fill="#18B6C9"/>
+    <rect x="147" y="20" width="6" height="20" rx="1" fill="#FFFFFF"/>
+    <rect x="140" y="27" width="20" height="6" rx="1" fill="#FFFFFF"/>
+
+    <!-- Secondary Wing / Fracture Center -->
+    <rect x="270" y="110" width="130" height="150" rx="12" fill="#FFFFFF" stroke="#0B6EBD" stroke-width="2" filter="url(#abShadow)"/>
+    <rect x="290" y="130" width="90" height="20" rx="4" fill="#EAF6FC"/>
+    <text x="335" y="144" font-family="'Poppins', sans-serif" font-size="9" font-weight="700" fill="#0B6EBD" text-anchor="middle">FRACTURE CARE</text>
+    
+    <circle cx="335" cy="190" r="24" fill="#EAF6FC"/>
+    <!-- Bone Alignment Icon -->
+    <path d="M330 178 L340 202 M340 178 L330 202" stroke="#0B6EBD" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Overlay Floating Metric Pill -->
+  <g transform="translate(60, 40)">
+    <rect x="0" y="0" width="240" height="42" rx="21" fill="url(#glassTile)" stroke="#FFFFFF" stroke-width="1.5" filter="url(#abShadow)"/>
+    <circle cx="22" cy="21" r="8" fill="#16A34A"/>
+    <text x="38" y="26" font-family="'Poppins', sans-serif" font-size="12" font-weight="600" fill="#073B63">Open 24 Hours • Emergency Care</text>
+  </g>
+
+  <!-- Overlay Floating Location Pill -->
+  <g transform="translate(250, 360)">
+    <rect x="0" y="0" width="250" height="42" rx="21" fill="#073B63" filter="url(#abShadow)"/>
+    <circle cx="22" cy="21" r="8" fill="#18B6C9"/>
+    <text x="38" y="26" font-family="'Poppins', sans-serif" font-size="11" font-weight="500" fill="#FFFFFF">B-Narayan Gate, Circular Rd, Bharatpur</text>
+  </g>
+</svg>

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 550" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <radialGradient id="heroGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#18B6C9" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#0B6EBD" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#073B63" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="boneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#EAF6FC"/>
+      <stop offset="100%" stop-color="#BEE3F8"/>
+    </linearGradient>
+    <linearGradient id="jointAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#18B6C9"/>
+      <stop offset="100%" stop-color="#0B6EBD"/>
+    </linearGradient>
+    <linearGradient id="cardGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#F0F9FF" stop-opacity="0.75"/>
+    </linearGradient>
+    <filter id="glowFilter" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="softDrop" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#073B63" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient background glow -->
+  <circle cx="300" cy="270" r="240" fill="url(#heroGlow)"/>
+
+  <!-- Tech Circular Grid Rings (Orthopedic alignment & precision) -->
+  <circle cx="300" cy="270" r="220" fill="none" stroke="#0B6EBD" stroke-opacity="0.12" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <circle cx="300" cy="270" r="180" fill="none" stroke="#18B6C9" stroke-opacity="0.2" stroke-width="1.5"/>
+  <circle cx="300" cy="270" r="130" fill="none" stroke="#0B6EBD" stroke-opacity="0.15" stroke-width="2" stroke-dasharray="12 8"/>
+  <circle cx="300" cy="270" r="80" fill="none" stroke="#18B6C9" stroke-opacity="0.3" stroke-width="1.5"/>
+
+  <!-- Compass / Coordinate Axis Marks -->
+  <line x1="300" y1="40" x2="300" y2="70" stroke="#18B6C9" stroke-width="2" stroke-linecap="round"/>
+  <line x1="300" y1="470" x2="300" y2="500" stroke="#18B6C9" stroke-width="2" stroke-linecap="round"/>
+  <line x1="70" y1="270" x2="100" y2="270" stroke="#18B6C9" stroke-width="2" stroke-linecap="round"/>
+  <line x1="500" y1="270" x2="530" y2="270" stroke="#18B6C9" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Clinical Core Pod / Glass Shield -->
+  <rect x="180" y="110" width="240" height="320" rx="36" fill="url(#cardGlass)" stroke="rgba(255,255,255,0.9)" stroke-width="2" filter="url(#softDrop)"/>
+
+  <!-- Central Orthopedic Joint & Bone Structure (Symbol of Fracture & Mobility Restoration) -->
+  <g transform="translate(300, 270)">
+    <!-- Upper Femur / Bone Shaft -->
+    <path d="M-18 -120 C-18 -90 -12 -50 -14 -20 C-22 -18 -32 -8 -30 10 C-28 24 -16 28 0 28 C16 28 28 24 30 10 C32 -8 22 -18 14 -20 C12 -50 18 -90 18 -120 Z" 
+          fill="url(#boneGrad)" stroke="#0B6EBD" stroke-width="2" stroke-opacity="0.4"/>
+    
+    <!-- Joint Condyle / Articulation Zone with Cyan Light -->
+    <ellipse cx="0" cy="18" rx="34" ry="14" fill="url(#jointAccent)" opacity="0.85" filter="url(#glowFilter)"/>
+    <ellipse cx="0" cy="18" rx="28" ry="10" fill="#FFFFFF" opacity="0.9"/>
+
+    <!-- Lower Tibia / Joint Base -->
+    <path d="M-28 32 C-26 44 -14 50 -12 70 C-12 100 -16 120 -16 130 L16 130 C16 120 12 100 12 70 C14 50 26 44 28 32 Z" 
+          fill="url(#boneGrad)" stroke="#0B6EBD" stroke-width="2" stroke-opacity="0.4"/>
+
+    <!-- Fracture Healing / Alignment Precision Grid Lines -->
+    <line x1="-50" y1="18" x2="50" y2="18" stroke="#18B6C9" stroke-width="2.5" stroke-dasharray="3 3"/>
+    <line x1="0" y1="-80" x2="0" y2="110" stroke="#0B6EBD" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+
+    <!-- Healing Energy Nodes -->
+    <circle cx="-24" cy="18" r="4.5" fill="#18B6C9" filter="url(#glowFilter)"/>
+    <circle cx="24" cy="18" r="4.5" fill="#18B6C9" filter="url(#glowFilter)"/>
+    <circle cx="0" cy="18" r="5.5" fill="#0B6EBD"/>
+  </g>
+
+  <!-- Medical Cross Badge in Core -->
+  <g transform="translate(300, 150)">
+    <circle cx="0" cy="0" r="22" fill="#0B6EBD" filter="url(#softDrop)"/>
+    <rect x="-4" y="-12" width="8" height="24" rx="2" fill="#FFFFFF"/>
+    <rect x="-12" y="-4" width="24" height="8" rx="2" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Subtitle Tag inside Pod -->
+  <rect x="210" y="380" width="180" height="28" rx="14" fill="#EAF6FC" stroke="#0B6EBD" stroke-opacity="0.2"/>
+  <text x="300" y="398" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#073B63" text-anchor="middle" letter-spacing="0.5">ORTHOPEDIC PRECISION</text>
+
+  <!-- Dynamic ECG Vital Pulse across the bottom -->
+  <path d="M 60 480 L 170 480 L 185 455 L 195 505 L 210 440 L 225 515 L 235 480 L 370 480 L 385 455 L 395 505 L 410 440 L 425 515 L 435 480 L 540 480" 
+        fill="none" stroke="#18B6C9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" filter="url(#glowFilter)"/>
+
+  <!-- Satellite Particles -->
+  <circle cx="120" cy="160" r="5" fill="#18B6C9" opacity="0.8"/>
+  <circle cx="480" cy="140" r="6" fill="#0B6EBD" opacity="0.7"/>
+  <circle cx="140" cy="380" r="4" fill="#0B6EBD" opacity="0.6"/>
+  <circle cx="470" cy="390" r="5" fill="#18B6C9" opacity="0.85"/>
+</svg>
